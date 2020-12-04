@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TP1DelaCasaAldoJavier</title>
+        <link rel="stylesheet" href="estilos.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script>
+            function validardatos() {
+                //verifica que todos los campos esten completos y agradece, sino solicita completarlos
+                const nombre = document.getElementById('nombre').value;
+                const email = document.getElementById('mail').value;
+                const mensaje = document.getElementById('mensaje').value;
+                //
+                if ((email == "") || (nombre == "") || (mensaje == "")) { alert("Por favor, " + nombre + ", debe completar la totalidad de los campos. Gracias!"); }
+                else { alert('Hola ' + nombre + '! Muchas Gracias por completar el formulario!'); }
+            }
+        </script>
+    
+    </head>
+    <body style="background-color:rgb(124, 211, 214); border-color:darkblue;">
+       <div class="container">
+            <header style="border:3px solid burlywood; background-color:aquamarine;">
+                <h1 class="bg-danger .text-center">DE A CABALLO</h1>
+                <div class="container">
+                    <img src="img/deacaballo.jpg" alt="Imagen de hombre a caballo, de Molina Campos" style="width:70%" class="mx-auto d-block"> 
+                </div>  
+                
+                <h2 class="bg-primary"><i>Indumentaria para el hombre de Campo</i></h2>
+                <br>
+
+                <nav class="nav">
+                    <!-- <ul>
+                        <li><a href="Pagos.html">Medios de Pago</li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                        <li><a href="https://www.google.com.ar" target="_blank">Ir a Google</a></li>
+                    </ul> -->
+    
+                    <a class="nav-link" href="index.html">INICIO</a>
+                    <a class="nav-link" href="Pagos.html">PAGOS</a>
+                    <a class="nav-link disabled" href="Contacto.html">CONTACTO</a>
+                    <a class="nav-link" href="https://www.google.com.ar" target="_blank">IR AL BUSCADOR</a>
+                    <a class="nav-link" href="Adivinanza.html">ADIVINANZA</a>
+                </nav>
+
+                <!-- <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</li>
+                        <li><a href="pagos.html">Medios de Pago</a></li>
+                        <li><a href="https://www.google.com.ar" target="_blank">Ir a Google</a></li>
+                    </ul>
+                </nav> -->
+            </header>
+    <section style="border:2px solid burlywood">
+        <br>
+        <h2 style="color: black">LO ESPERAMOS EN:</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm2 col-md4 offset-md-2"></div>
+                    <ul">
+                        <li><b>Dirección:</b> San Martin 4321</li>
+                        <li><b>CP:</b> 3240 </li>
+                        <li><b>Localidad:</b> Villaguay</li>
+                        <li><b>Provincia:</b> Entre Ríos</li>
+                        <li><b>País:</b> Argentina</li>
+                        <li><b>Teléfonos:</b> 03455 - 420001 - 420002</li>
+                    </ul>
+            </div>
+
+        
+        </div>
+        
+    </section>
+
+<br>
+<br>
+      <form>
+        <div class="form-group row ">
+            <div class="col-sm-4 col-form-label offset-md-2">
+                <!-- <p id="formulariotit">FORMULARIO DE CONTACTO:</p> -->
+                <h4>FORMULARIO DE CONTACTO:</h4>
+            </div>
+        </div>
+
+        <div class="form-group row ">
+            <label id="negrita" for="Nombre" class="col-sm-2 col-form-label offset-md-2">NOMBRE</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre completo" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="mail" class="col-sm-2 col-form-label offset-md-2">E-MAIL</label>
+            <div class="col-sm-6">
+                <input type="email" class="form-control mb-2 mr-sm-2" placeholder="nombre@dominio.com" required id="email">
+                <!-- <input type="text" class="form-control" id="mail" placeholder="nombre@dominio.com" required> -->
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Mensaje" class="col-sm-2 col-form-label offset-md-2">MENSAJE</label>
+            <div class="col-sm-6">
+                <textarea class="form-control" rows="5" id="mensaje" placeholder="Escriba aquí su mensaje" required></textarea>
+                <!--<input type="text" class="form-control" id="mensaje" required>-->
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-1 offset-md-8">
+                <button id="btnvalidar" class="btn btn-primary" onclick="validardatos()">VALIDAR</button>
+                <!-- <button type="submit" class="btn btn-primary mb-2">Submit</button> -->
+            </div>
+        </div>
+    </form>
+      
+    <li><a href="index.html" id="Volver">Volver al Inicio</a></li>
+    <footer style="background-color: aquamarine;"> 
+       <menu style="border:2px solid burlywood">
+           <!-- <li><a href="index.html" id="Volver">Volver al Inicio</a></li> -->
+            <br>
+            <b>Desarrollador:</b>
+            <li><i>Aldo de la Casa</i></li>
+            <li><i>aldodelacasa@gmail.com</i></li>
+            <li><i>Teléfono: 3455-410000</li></i>
+            <li><i>Dirección: Alameda 3210, CP: 3240, Villaguay - Entre Ríos</li></i>
+        </menu>
+    </footer>
+</body>
+</html>

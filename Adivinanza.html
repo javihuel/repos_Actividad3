@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TP1DelaCasaAldoJavier</title>
+        <!--Para poder usar los star rating para los intentos-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="estilos.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script>
+            const cantvidas=4;
+            var intento=1;
+            function verificar() {
+                //alert('Intento numero '+intento);
+                document.getElementById('vidas').innerHTML = (cantvidas-intento);
+
+                //Verifica si la respuesta es correcta, si lo es lo informa, sino resuelve segun el numero de intentos
+                var respuesta = document.getElementById('Respuesta').value;
+                 respuesta = respuesta.toUpperCase();
+                //if((respuesta == "MATE") || (respuesta == "mate") || (respuesta == "MATE"))
+                if(respuesta == "MATE") 
+                    { alert("FELICITACIONES!!! EL MATE es la respuesta correcta!. Muchas Gracias!");
+                    document.getElementById('btnvalidar').disabled='true';
+                    document.getElementById('vidas').style.display = 'none';
+                    document.getElementById('ganador').style.display = 'block';
+                       
+                  // document.getElementById('vidas').='false';
+                    }
+                //if (respuesta == "MATE") { alert("FELICITACIONES!!! MATE es la respuesta correcta!. Muchas Gracias!"); }
+                else { 
+                        //cambiar();
+                        alert(respuesta + ' no es la palabra correcta!'); 
+                        intento=intento+1;
+                        if (intento==3)
+                            {alert('Pista 1: Se bebe de a sorbitos');}
+                                else{
+                                    if (intento==4)
+                                        {alert('Pista 2: los panza verde lo adoptamos desde chiquitos');}
+                                        else{
+                                              if (intento>4)
+                                                    {
+                                                    document.getElementById('btnvalidar').disabled='true';
+                                                    alert('Lamentablemente ha agotado los intentos, ¡PERDIO!');
+                                                    }
+                                            }
+                                    }
+                }
+            vidas(intento);
+            }
+            // function Intento(){
+            //     intento=intento+1;
+            //     if (intento==6)
+            //         {intento=0;}
+            //     return intento;
+            // }
+            // function vidas(intento){
+            //     intentos=intento;
+            //     if (intentos==1){
+            //         span1.style.property = checked
+            //         restantes.caption=1;
+            //     }
+            //     if (intentos==2){
+            //         span1.style.property = checked;
+            //         span2.style.property = checked;
+            //     }
+            //     if (intentos==3){
+            //         span1.style.property = checked;
+            //         span2.style.property = checked;
+            //         span3.style.property = checked;
+            //     }
+            //     if (intentos==4){
+            //         span1.style.property = checked;
+            //         span2.style.property = checked;
+            //         span3.style.property = checked;
+            //         span4.style.property = checked;
+
+            //     }
+                
+                
+            //         // for(i=1; i<=5; ++i) {
+            //         //     if (intentos<=i)
+            //         //     {<span class="fa fa-star checked"></span>}
+            //         //     else {<span class="fa fa-star"></span>}
+            //         // }
+            //     }
+        
+            // function cambiar() {
+            //     if (intento==1){document.getElementById('barradevidas').style.width='40%';}
+            //     else 
+            //         if(intento==2){document.getElementById('barradevidas').style.width='70%';}
+            //            else
+            //             if(intento==3){document.getElementById('barradevidas').style.width='92%';}
+            //               else
+            //                 {document.getElementById('barradevidas').style.width='100%';}
+            // }
+		        
+        
+        </script>
+    
+    </head>
+    <body style="background-color:rgb(124, 211, 214); border-color:darkblue;">
+        <div class="container">
+            <header style="border:3px solid burlywood; background-color:aquamarine;">
+                <h1 class="bg-danger .text-center">DE A CABALLO</h1>
+                <div class="container">
+                    <img src="img/deacaballo.jpg" alt="Imagen de hombre a caballo, de Molina Campos" style="width:70%" class="mx-auto d-block"> 
+                </div>  
+                
+                <h2 class="bg-primary"><i>Indumentaria para el hombre de Campo</i></h2>
+                <br>
+
+                <nav class="nav">  
+                    <a class="nav-link" href="index.html">INICIO</a>
+                    <a class="nav-link" href="Pagos.html">PAGOS</a>
+                    <a class="nav-link" href="Contacto.html">CONTACTO</a>
+                    <a class="nav-link" href="https://www.google.com.ar" target="_blank">IR AL BUSCADOR</a>
+                    <a class="nav-link disabled" href="Adivinanza.html">ADIVINANZA</a>
+                </nav>
+            </header>
+            <h2>ADIVINANZA</h2>
+            <div class="text-center">               
+                    <span id="estrella1" class="fa fa-star"></span>
+                    <span id="estrella2" class="fa fa-star"></span>
+                    <span id="estrella3" class="fa fa-star"></span>
+                    <span id="estrella4" class="fa fa-star"></span>
+            
+                    INTENTOS RESTANTES:<br>
+                    <div class="container">
+                        <!-- <label id="vidas" type="text" .text-dark style="background-color: rgb(214, 8, 35);font-size:larger;">4</label> -->
+                        <h4 class="text-white" id="vidas" style="background-color: rgb(152, 201, 16);font: size 40">4</h4>
+                    </div>
+                    <div class="container">      
+                        <h4 class="text-white" id="ganador" style="background-color: rgb(238, 53, 6);font: size 40">FELICITACIONES CUMPA!!! UD ADIVINÓ EL ACERTIJO!!!</h4>
+                    </div>
+                     
+            <!-- </div>
+                VIDAS VIVIDAS:
+                <div class="progress">  
+                    <div class="progress-bar" id="barradevidas" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div> -->
+    <container>
+         <div class="container h-100">
+            <div class="row justify-content-center h-100">
+                <div class="col-sm-8 align-self-center text-center">
+                    <div class="card shadow">
+                        <div class="card-body">  
+                            <div class="text-center"><h3>De mano en mano lo pasan, todos quieren un poquito, a todo entrerriano le gusta, siempre que esté calentito</h3> </div>
+                            <input type="text" name="Respuesta" id="Respuesta" class="form-control" placeholder="Escriba aquí su respuesta, una única palabra" aria-describedby="helpId">
+                            <br>
+                            <button id="btnvalidar" type="button" class="btn btn-primary" onclick="verificar()">Verificar Respuesta</button>   
+                            <!-- <button id="btnvalidar" class="btn btn-primary" onclick="verificar()">VALIDAR</button> -->
+                            <br>
+                            <label type="text" id="numintento"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </container>
+<br>
+<SCRIPT>
+    document.getElementById('ganador').style.display = 'none';
+</SCRIPT>
+           
+    <li><a href="index.html" id="Volver">Volver al Inicio</a></li>
+    <footer style="background-color: aquamarine;"> 
+       <menu style="border:2px solid burlywood">
+           <!-- <li><a href="index.html" id="Volver">Volver al Inicio</a></li> -->
+            <br>
+            <b>Desarrollador:</b>
+            <li><i>Aldo de la Casa</i></li>
+            <li><i>aldodelacasa@gmail.com</i></li>
+            <li><i>Teléfono: 3455-410000</li></i>
+            <li><i>Dirección: Alameda 3210, CP: 3240, Villaguay - Entre Ríos</li></i>
+        </menu>
+    </footer>
+</body>
+</html>

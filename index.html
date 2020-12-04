@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1DelaCasaAldoJavier</title>
+    <link rel="stylesheet" href="estilos.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+        function alCarrito() {
+                //Informa carrito no implementado y pide contactarse
+                alert("Por el momento no se ha implementado el carrito, contáctese para solicitar una cotizacion y concretar su compra. Gracias!");
+            }
+    </script>
+</head>
+
+<!-- <body style="background-color:rgb(124, 211, 214); border-color:darkblue;"> -->
+
+    <body background="img/img.jpg">
+   <div class="container">
+        <header style="border:3px solid burlywood; background-color:aquamarine;">
+            <header style="border:3px solid burlywood; background-color:aquamarine;">
+                <h1 class="bg-danger .text-center">DE A CABALLO</h1>
+                <div class="container">
+                    <img src="img/deacaballo.jpg" alt="Imagen de hombre a caballo, de Molina Campos" style="width:70%" class="mx-auto d-block"> 
+                </div>  
+                
+                <h2 class="bg-primary"><i>Indumentaria para el hombre de Campo</i></h2>
+                <br>
+            <nav class="nav">
+                <!-- <ul>
+                    <li><a href="Pagos.html">Medios de Pago</li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="https://www.google.com.ar" target="_blank">Ir a Google</a></li>
+                </ul> -->
+
+                <a class="nav-link disabled" href="index.html">INICIO</a>
+                <a class="nav-link" href="Pagos.html">PAGOS</a>
+                <a class="nav-link" href="Contacto.html">CONTACTO</a>
+                <a class="nav-link" href="https://www.google.com.ar" target="_blank">BUSCADOR</a>
+                <a class="nav-link" href="Adivinanza.html">ADIVINANZA</a>
+            </nav>
+        </header>
+    </br>
+
+    
+      <!-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#Camisa Clasica Lisa" data-slide-to="0" class="active"></li>
+          <li data-target="#Camisa clasica a cuadros" data-slide-to="1"></li>
+          <li data-target="#Camisa Cuello Mao" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/cam1.jpg" class="d-block w-20" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Camisa Clasica Lisa</h5>
+              <p>Cómoda y liviana, ideal para verano. Disponible en colores Negro, Beige, Verde y Azul</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/cam2.jpg" class="d-block w-20" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Camisa Clasica a Cuadros</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/cam3.jpg" class="d-block w-20" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Camisa Cuello Mao</h5>
+              <p>Cómoda y liviana, ideal para verano. Disponible en colores Negro, Beige, Verde y Azul.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div> -->
+
+
+
+
+    <div class="container">
+    <H4>CAMISAS</H4>
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18em;">
+                <img src="img/cam1.jpg" alt="Camisa Clasica Lisa" width="60%" height="auto" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Clasica Lisa</h5>
+                  <p class="card-text">Liviana, para vestir cómodo. Disponible en colores Negro, Beige, Verde y Azul</p>
+                  <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                  <!-- <a href="#" class="btn btn-primary">Agregar al Carrito</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18em;">
+                <img src="img/cam2.jpg" alt="Camisa Clasica a Cuadros" width="60%" height="auto" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Clasica a Cuadros</h5>
+                  <p class="card-text">Para todos los días. Cómoda y liviana.. Disponible en variedad de cuadros</p>
+                  <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18em;">
+                <img src="img/cam3.jpg" alt="Camisa Cuello Mao" width="60%" height="auto" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Cuello Mao</h5>
+                  <p class="card-text">Moderna y elegante. Disponible en varios colores lisos y cuadros</p>
+                  <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+                <div class="card" style="width: 18em;">
+                    <img src="img/cam4.jpg" alt="Camisa de trabajo" width="60%" height="auto" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">De Trabajo</h5>
+                      <p class="card-text">Para la labor mas exigente. Disponible en colores Beige, Verde, Azul y Aero</p>
+                      <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+       
+    </div>
+    <!-- <div class="row">
+        <div class="col">
+            <img src="img/cam1.jpg" alt="Camisa1" width="60%" height="auto">
+        </div>
+        <div class="col">
+            <img src="img/cam2.jpg" alt="Camisa2" width="60%" height="auto">
+        </div>
+        <div class="col">
+            <img src="img/cam3.jpg" alt="Camisa3" width="60%" height="auto">
+        </div>
+        <div class="col">
+            <img src="img/cam4.jpg" alt="Camisa4" width="60%" height="auto">
+        </div>
+    </div> -->
+
+
+    <!-- <div style="overflow-x:auto;">
+        <H4>CAMISAS</H4>
+         <table>
+            <tr>
+                <th><h3>Clásica Lisa</h3></th>
+                <th><h3>Clásica a Cuadros</h3></th>
+                <th><h3>Cuello Mao</h3></th>
+                <th><h3>De Trabajo</h3></th>
+            </tr>  
+            <tr>
+                <td><img src="img/cam1.jpg" alt="Camisa1" width="60%" height="auto"></td>
+                <td><img src="img/cam2.jpg" alt="Camisa2" width="60%" height="auto"></td>
+                <td><img src="img/cam3.jpg" alt="Camisa3" width="60%" height="auto"></td>
+                <td><img src="img/cam4.jpg" alt="Camisa4" width="60%" height="auto"></td>
+            </tr>  
+          </table>
+        </div> -->
+
+
+    </br>
+            <H4>BOMBACHAS DE CAMPO</H4>
+            <div class="container">
+                
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18em;">
+                        <img src="img/bom1.jpg" alt="Bombacha de campo 1" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Bombacha Lisa de Gabardina</h5>
+                          <p class="card-text">Cómoda y liviana, ideal para verano. Disponible en colores Negro, Beige, Verde y Azul</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col">  
+                  <div class="card" style="width: 18rem;">
+                        <img src="img/bom2.jpg" alt="Bombacha de campo 2" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Bombacha de Acrocel tableada</h5>
+                          <p class="card-text">Cómoda y liviana, mas que una prenda de vestir. Disponible en colores Negro, Crudo, Bordó y Azul</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/bom4.jpg" alt="Bombacha de campo 4" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Bombacha Lisa de Fantasía</h5>
+                          <p class="card-text">Cómoda y muy liviana, ideal para vestir en verano. Disponible en colores rayados Negro y gris</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col"> 
+                    <div class="card" style="width: 18rem;">
+                    <img src="img/bom3.jpg" alt="Bombacha de campo 3" width="60%" height="auto" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Bombacha Lisa de Jean</h5>
+                      <p class="card-text">Cómoda, calentita y duradera. Disponible en Negro, gris, Verde y Azul</p>
+                      <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                    </div>
+                    </div>
+                </div>
+            </div>      
+        </br>
+        <div class="container">
+        <h4>CHALECOS Y BOINAS</h4>  
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/cha1.jpg" alt="Chaleco de hilo" width="60%" height="auto" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Chaleco de Hilo</h5>
+                      <p class="card-text">Abrigo Liviano, diferentes colores, con o sin guarda pampa.</p>
+                      <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/boi1.jpg" alt="Boina de Hilo" width="40%" height="auto" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Boina de Hilo</h5>
+                      <p class="card-text">Funda-mental. De hilo, fresca, ideal para trotear en la siesta.</p>
+                      <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/boi2.jpg" alt="Boina de Paño" width="40%" height="auto" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Boina de Paño</h5>
+                      <p class="card-text">Funda-mental. De paño, delicada y abrigada</p>
+                      <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                    <!-- <h4>CHALECOS Y BOINAS</h4>
+            <table>
+                <tr>
+                    <th><H3>Chalecos</H3></th>
+                    <th><h3>Boinas de Hilo</h3> </th> 
+                    <th><h3>Boinas de Paño</h3></th>
+                </tr>
+                <tr>
+                    <td><img src="img/cha1.jpg" alt="Chaleco1" width="60%" height="auto"></td>
+                    <td><img src="img/boi1.jpg" alt="Boina de Hilo" width="45%" height="auuto"></td>
+                    <td><img src="img/boi2.jpg" alt="Boina de Paño" width="45%" height="auuto"></td>
+                </tr>    
+ 
+            </table> -->
+        </br>
+            <div class="container">
+                <h4>SOMBREROS</h4>
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/som5.jpg" alt="Sombrero" width="60%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Sombrero 1</h5>
+                              <p class="card-text">Para cubrirse del sol o para verse bien.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/som2.jpg" alt="Sombrero 2" width="60%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Sombrero 2</h5>
+                              <p class="card-text">Para cubrirse del sol o para verse bien.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/som4.jpg" alt="Sombrero 3" width="60%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Sombrero 3</h5>
+                              <p class="card-text">Para cubrirse del sol o para verse bien.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/som1.jpg" alt="Sombrero 4" width="40%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Sombrero 4</h5>
+                              <p class="card-text">Para cubrirse del sol o para verse bien.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/som3.jpg" alt="Sombrero 5" width="40%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Sombrero 5</h5>
+                              <p class="card-text">Para cubrirse del sol o para verse bien.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+
+
+        <!-- <div style="overflow-x:auto;">
+            <H4>SOMBREROS</H4>
+             <table>
+                <tr>
+                    <td><img src="img/som2.jpg" alt="Sombrero 1" width="60%" height="auto"></td>
+                    <td><img src="img/som4.jpg" alt="Sombrero 2" width="60%" height="auto"></td>
+                    <td><img src="img/som5.jpg" alt="Sombrero 3" width="60%" height="auto"></td>
+                </tr>  
+                <tr>
+                    <td><img src="img/som1.jpg" alt="Sombrero 4" width="60%" height="auto"></td>
+                    <td><img src="img/som3.jpg" alt="Sombrero 5" width="60%" height="auto"></td>
+                </tr>
+            </table>
+        </div> -->
+        <br>
+        <div class="container">
+            <H4>ALPARGATAS</H4>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/alp1.jpg" alt="Alpargatas clasicas" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Clásicas</h5>
+                          <p class="card-text">Economicas pero duraderas. Con punta reforzada.</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/alp2.jpg" alt="Alpargatas con guarda pampa" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Con guarda Pampa</h5>
+                          <p class="card-text">Elegantes y resistentes.</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <div style="overflow-x:auto;">
+            <H4>ALPARGATAS</H4>
+             <table>
+                <tr>
+                    <td><img src="img/alp1.jpg" alt="Alpargatas 1" width="60%" height="auto"></td>
+                    <td><img src="img/alp2.jpg" alt="Alpargatas 2" width="60%" height="auto"></td>
+                </tr>  
+            </table>
+        </div> -->
+        <br>
+        <div class="container">
+            <H4>BOTAS DE CUERO CON TACO</H4>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/bot1.jpg" alt="Botas 1" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Botas 1</h5>
+                          <p class="card-text">Para vestirse bien.</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/bot2.jpg" alt="Botas 2" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Botas 2</h5>
+                          <p class="card-text">Para vestirse bien.</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/bot3.jpg" alt="Botas 3" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Botas 3</h5>
+                          <p class="card-text">Para vestirse bien.</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/bot4.jpg" alt="Botas 4" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Botas 4</h5>
+                          <p class="card-text">Para vestirse bien.</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <div style="overflow-x:auto;">
+            <H4>BOTAS</H4>
+             <table>
+                <tr>
+                    <td><img src="img/bot1.jpg" alt="Botas de cuero 1" width="60%" height="auto"></td>
+                    <td><img src="img/bot2.jpg" alt="Botas de cuero 2" width="60%" height="auto"></td>
+                    <td><img src="img/bot3.jpg" alt="Botas de cuero 3" width="60%" height="auto"></td>
+                    <td><img src="img/bot4.jpg" alt="Botas de cuero 4" width="60%" height="auto"></td>
+                </tr>  
+            </table>
+        </div> -->
+        <br>
+        <div class="container">
+            <H4>CINTOS</H4>
+            <div class="row">
+                
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/cin2.jpg" alt="Cinto con rastra" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Nacional con rastras</h5>
+                          <p class="card-text">Para lucir en fiestas paquetas.</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/cin3.jpg" alt="Cinto de Carpincho" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Culero de carpincho</h5>
+                          <p class="card-text">Para vestir bien sin llamar la atención.</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/cin4.jpg" alt="Cinto de trabajo" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Cinto de trabajo</h5>
+                          <p class="card-text">Para la labor diaria.</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/cin1.jpg" alt="Cinto Uruguayo con rastra" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Uruguayo con rastra</h5>
+                          <p class="card-text">Para que el pantalon no caiga.</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <div style="overflow-x:auto;">
+            <H4>CINTOS</H4>
+             <table>
+                <tr>
+                    <th><h3>Uruguayo con rastra</h3></th>
+                    <th><h3>Con Rastra</h3></th>
+                    <th><h3>De carpincho</h3></th>
+                    <th><h3>De trabajo</h3></th>
+                </tr>  
+                <tr>
+                    <td><img src="img/cin1.jpg" alt="Cinto Uruguayo con rastra" width="80%" height="auto"></td>
+                    <td><img src="img/cin2.jpg" alt="Cinto con rastra" width="80%" height="auto"></td>
+                    <td><img src="img/cin3.jpg" alt="Cinto culero de carpincho" width="60%" height="auto"></td>
+                    <td><img src="img/cin4.jpg" alt="Cinto de trabajo" width="60%" height="auto"></td>
+                </tr>  
+              </table>
+        </div> -->
+    </br>
+        <div class="container">
+        <H4>MATES y BILLETERAS</H4>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/mat1.jpg" alt="Mate 1 - boca de alpaca" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Mate Boca de alpaca</h5>
+                          <p class="card-text">Para compartir con amigos.</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div> 
+                    </div>
+                </div>
+            <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/mat2.jpg" alt="Mate 2 - Forrado de cuero" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Mate Forrado de cuero</h5>
+                          <p class="card-text">Para compartir con mas amigos.</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div> 
+                    </div>
+            </div>
+            <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/bil1.jpg" alt="Billetera 1" width="60%" height="auto" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Billetera trabajada en cuero</h5>
+                          <p class="card-text">Para presumir frente a la dama.</p>
+                          <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                        </div> 
+                    </div>
+            </div>
+            </div>
+        </div>
+    </br>
+        <div class="container">
+            <H4>FAJAS</H4>
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/faj1.jpg" alt="Faja Pampa" width="60%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Faja Pampa</h5>
+                              <p class="card-text">Ideal para el jinete, no se desplaza.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div> 
+                        </div>
+                    </div>
+                <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/faj2.jpg" alt="Faja de Lana Hilada" width="60%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Faja de Lana Hilada</h5>
+                              <p class="card-text">Confeccionada artesanalmente con lana natural hilada a mano.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div> 
+                        </div>
+                </div>
+            </div>
+        </div>  
+        
+        <!-- <div style="overflow-x:auto;">
+            <H4>MATES y BILLETERAS</H4>
+             <table>
+                <tr>
+                    <td><img src="img/mat1.jpg" alt="Mate 1" width="45%" height="auto"></td>
+                    <td><img src="img/mat2.jpg" alt="Mate 2" width="60%" height="auto"></td>
+                    <td><img src="img/bil1.jpg" alt="Billetera 1" width="60%" height="auto"></td>
+                </tr>  
+              </table>
+            </div>
+        <div> -->
+           
+        <!-- <div style="overflow-x:auto;">
+
+            <H4>FAJAS</H4>
+             <table>
+                 <tr>
+                    <th><h3>Pampa</h3></th>
+                    <th><h3>De Lana Hilada</h3></th>
+                </tr>
+                <tr>
+                    <td><img src="img/faj1.jpg" alt="Faja Pampa" width="60%" height="auto"></td>
+                    <td><img src="img/faj2.jpg" alt="Faja de Lana hilada" width="60%" height="auto"></td>
+                </tr>  
+            </table>
+        </div> -->
+    </br>  
+        <div class="container">
+            <H4>GUARDAMONTE</H4>
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/gp1.jpg" alt="Guardamonte de Cuero" width="50%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Guardamonte de Cuero</h5>
+                              <p class="card-text">Reforzado, apto para espinillal cerrado.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div> 
+                        </div>
+                    </div>
+                <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/gp2.jpg" alt="Guardamonte de Lona" width="50%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Guardamonte de Lona</h5>
+                              <p class="card-text">Para andar al trote con las piernas cubiertas, por si las moscas.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div> 
+                        </div>
+                </div>
+            </div>
+        </div>  
+    </br>
+        <div class="container">
+            <H4>PAÑUELOS</H4>
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/pan1.jpg" alt="Pañuelo 1" width="50%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Clasico</h5>
+                              <p class="card-text">Diferentes motivos tradicionales.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div> 
+                        </div>
+                    </div>
+                <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/pan2.jpg" alt="Pañuelo 2" width="50%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Con motivos pampeanos</h5>
+                              <p class="card-text">Colores para vestir en fiestas.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div> 
+                        </div>
+                </div>
+            </div>
+        </div>
+    </br>
+        <div class="container">
+            <H4>LAZOS</H4>
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/laz1.jpg" alt="Lazo trenzado de cuero 1" width="50%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Trenzado de cuero 8 hilos</h5>
+                              <p class="card-text">El de siempre.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div> 
+                        </div>
+                    </div>
+                <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/laz2.jpg" alt="Lazo trenzado de cuero 2" width="50%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Trenzado de cuero 12 hilos</h5>
+                              <p class="card-text">Reforzado, para cinchar lo que venga.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div> 
+                        </div>
+                </div>
+            </div>
+        </div>
+    </br>
+        <div class="container">
+            <H4>ESTRIBOS Y CENCERROS</H4>
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/est1.jpg" alt="Estribo de bronce" width="60%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Estribo de bronce</h5>
+                              <p class="card-text">Para tener donde hacer pié desde el toviano.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div> 
+                        </div>
+                    </div>
+                <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/cen1.jpg" alt="Cencerro de bronce" width="60%" height="auto" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Cencerro de bronce pulido</h5>
+                              <p class="card-text">Pulido y afinado, con buen color a la vista y al oído.</p>
+                              <a href="#" class="btn btn-primary" onclick="alCarrito()">Agregar al Carrito</a>
+                            </div> 
+                        </div>
+                </div>
+            </div>
+        </div>
+    <br>
+    <!-- <form>
+        <div class="form-group row ">
+            <div class="col-sm-12">
+                <p id="formulariotit">FORMULARIO DE CONTACTO:</p>
+            </div>
+        </div>
+
+        <div class="form-group row ">
+            <label id="negrita" for="Nombre" class="col-sm-2 col-form-label offset-md-2 ">SU NOMBRE</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre completo" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="mail" class="col-sm-2 col-form-label offset-md-2">SU E-MAIL</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="mail" placeholder="nombre@dominio.com" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Mensaje" class="col-sm-2 col-form-label offset-md-2">SU MENSAJE</label>
+            <div class="col-sm-4">
+                <textarea class="form-control" rows="5" id="mensaje" placeholder="Escriba aquí su mensaje" required></textarea>
+                <!--<input type="text" class="form-control" id="mensaje" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-1 offset-md-7">
+                <button id="btnvalidar" class="btn btn-primary" onclick="validardatos()">VALIDAR</button>
+            </div>
+        </div>
+    </form> 
+-->
+
+    <footer style="background-color: aquamarine;"> 
+        <menu style="border:2px solid burlywood">
+        <li><a href="index.html">Volver al Inicio</a></li>
+            <li><a href="Contacto.html">Contactese para solicitar cotizacion</a></li>
+            <br>
+            <b>Desarrollador:</b>
+            <li><i>Aldo de la Casa</i></li>
+            <li><i>aldodelacasa@gmail.com</i></li>
+            <li><i>Teléfono: 3455-410000</li></i>
+            <li><i>Dirección: Alameda 3210, CP: 3240, Villaguay - Entre Ríos</li></i>
+        </menu>
+    </footer>
+</div>
+</body>
+</html>

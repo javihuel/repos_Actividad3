@@ -1,0 +1,124 @@
+body {
+    /*background-color: lightblue;*/
+    background: "fondo2.jpg";
+  }
+  Img{
+    background-color: orange;
+    display:block;
+    margin:auto;
+    /*margin-left: 60px;*/
+    /*vertical-align: middle;*/
+    border:3 px solid rgb(100, 40, 0);
+  }
+  h1 {
+    color: black;
+    /*background-color: red;*/
+    text-align: center;
+    /*margin-left: 80px;
+    margin-right: 130px;*/
+  }
+  h2 {
+    color: white;
+    /*background-color: rgb(12, 75, 156);*/
+    text-align: center;
+   /* margin-left: 80px;
+    margin-right: 130px;*/
+  }
+
+  h3{
+    color:  rgb(120, 195, 214);
+  }
+  h4{
+    color:  rgb(15, 3, 66);
+  }
+
+ table,tr,td,row {
+
+    /*margin-left: 80px;
+    margin-right: 10px;*/
+    background-color: rgb(3, 40, 63);
+    vertical-align: middle;
+    margin: 0 auto;
+  }
+  .responsive {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  li{
+    font-size: large;
+    font-family: candara;
+  }
+  #volver{
+    font-size: large;
+    font-family: candara;
+  }
+  #formulariotit{
+    color: rgb(5, 5, 116);
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 115px;
+    margin-right: 115px;
+    background-color: blanchedalmond;}
+
+    .checked {
+      color: orange;
+    }
+
+  #barradeprogreso {
+      width: 100%;
+      background-color: grey;
+    }
+    
+    #myBar {
+      width: 1%;
+      height: 30px;
+      background-color: green;
+    }
+ 
+ /* .card-columns {
+    @include media-breakpoint-only(xl) {
+      column-count: 3;
+    }
+    @include media-breakpoint-only(lg) {
+      column-count: 2;
+    }
+    @include media-breakpoint-only(md) {
+      column-count: 1;
+    }
+    @include media-breakpoint-only(sm) {
+      column-count: 1;
+    }
+ } 
+*/
+ /* @media (min-width: 18em) {
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 62em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 75em) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
